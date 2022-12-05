@@ -11,12 +11,10 @@ get_meal_btn.addEventListener('click', () => {
 
 const createMeal = (meal) => {
 	const ingredients = [];
-	// Get all ingredients from the object. Up to 20
 	for(let i=1; i<=20; i++) {
 		if(meal[`strIngredient${i}`]) {
 			ingredients.push(`${meal[`strIngredient${i}`]} - ${meal[`strMeasure${i}`]}`)
 		} else {
-			// Stop if no more ingredients
 			break;
 		}
 	}
@@ -41,22 +39,3 @@ const createMeal = (meal) => {
 	
 	meal_container.innerHTML = newInnerHTML;
 }
-
-
-
-
-
-
-
-// SOCIAL PANEL JS
-const floating_btn = document.querySelector('.floating-btn');
-const close_btn = document.querySelector('.close-btn');
-const social_panel_container = document.querySelector('.social-panel-container');
-
-floating_btn.addEventListener('click', () => {
-	social_panel_container.classList.toggle('visible')
-});
-
-close_btn.addEventListener('click', () => {
-	social_panel_container.classList.remove('visible')
-});

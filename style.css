@@ -13,7 +13,9 @@ body {
 	min-height: 100vh;
 	background-color: #faefe1;
 }
-
+a {
+color: #f78d02;
+}
 img {
 	max-width: 100%;
 }

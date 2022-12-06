@@ -15,6 +15,7 @@ body {
 }
 a {
 color: #f78d02;
+	text-decoration: none;
 }
 img {
 	max-width: 100%;
